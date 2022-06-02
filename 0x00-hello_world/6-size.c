@@ -11,8 +11,8 @@
 
 int main(void)
 {
-	printf("Size of char is: %ld byte(s)", sizeof(char));
-	printf("size of int: %ld bytes(s)", sizeof(int));
+	printf("Size of a char is: %ld byte(s)", sizeof(char));
+	printf("size of an int: %ld bytes(s)", sizeof(int));
 	printf("Size of a long int: %ld bytes(s)", sizeof(long int));
 	printf("Size of a long long int: %ld bytes(s)", sizeof(long long int));
 	printf("Size of a float: %ld bytes(s)", sizeof(float));
