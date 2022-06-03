@@ -21,7 +21,7 @@ int main(void)
 		putchar(alphabet);
 	}
 
-	putchar('$');
+	putchar('\n');
 	return (0);
 
 }
