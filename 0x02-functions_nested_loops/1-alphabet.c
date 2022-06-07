@@ -17,4 +17,5 @@ void main(void)
 		i++;
 	}
 	_putchar('\n');
+	return;
 }
