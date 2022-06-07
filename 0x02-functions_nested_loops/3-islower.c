@@ -11,13 +11,15 @@
 int _islower(int c)
 {
 	char check;
+	int num1 = 20;
+	int num2 = 0;
 
 	check = tolower(c);
 	if (c == check)
 	{
 		return (1);
 	}
-	if (c != check)
+	if (c != check || c == 0 || c == 20)
 	{
 		return (0);
 	}
