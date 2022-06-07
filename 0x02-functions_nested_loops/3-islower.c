@@ -14,7 +14,11 @@ int _islower(int c)
 
 	check = tolower(c);
 	if (c == check)
+	{
 		return (1);
+	}
 	if (c != check)
+	{
 		return (0);
+	}
 }
