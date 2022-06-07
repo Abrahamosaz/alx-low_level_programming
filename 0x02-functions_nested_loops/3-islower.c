@@ -11,8 +11,6 @@
 int _islower(int c)
 {
 	char check;
-	int num1 = 20;
-	int num2 = 0;
 
 	check = tolower(c);
 	if (c == check)
