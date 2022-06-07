@@ -7,15 +7,9 @@
  * Return: return the integer 0
  *
  */
-void main(void)
+int main(void)
 {
-	char i = 'a';
-
-	while (i <= 'z')
-	{
-		_putchar(i);
-		i++;
-	}
+	print_alphabet();
 	_putchar('\n');
-	return;
+	return (0);
 }
