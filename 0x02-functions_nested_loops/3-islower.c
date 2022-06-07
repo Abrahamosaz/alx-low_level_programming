@@ -1,11 +1,12 @@
 #include "main.h"
 #include <ctype.h>
 /**
- * _islower: to check for lower case
+ *_islower - to check for lower case of int c
+ *@c: value to be check for by the function
  *
- * Description: return the required results
+ *Description: (int c) use to check the required results
  *
- * Return: return the integer 0
+ *Return: return the integer 0
  */
 int _islower(int c)
 {
@@ -13,10 +14,7 @@ int _islower(int c)
 
 	check = tolower(c);
 	if (c == check)
-	{
 		return (1);
-	} else 
-	{
+	if (c != check)
 		return (0);
-	}
 }
