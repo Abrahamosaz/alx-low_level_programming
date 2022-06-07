@@ -7,7 +7,6 @@
  * Description: add first number with second number
  *
  * Return: return integer value 0
- * 
  */
 int add(int x, int y)
 {
