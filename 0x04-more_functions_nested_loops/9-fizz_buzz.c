@@ -34,7 +34,6 @@ if (i > 1 && i % 3 == 0 && i % 5 == 0)
 		_putchar(i + '0');
 	if (i > 1 && i > 10)
 	{
-		_putchar(' ');
 		_putchar((i / 10) + '0');
 		_putchar((i % 10) + '0');
 	}
