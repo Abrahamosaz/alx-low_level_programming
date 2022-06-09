@@ -8,16 +8,22 @@
  * Return: return void
  *
  */
-void main(void)
+void print_diagonal(int n)
 {
 	int i;
 	int j;
 
-	for (i = 0; i <= 5; i++)
+	for (i = 0; i <= n; i++)
 	{
-		for (j = 0; j <= 5; j++)
+		for (j = 0; j <= n; j++)
 		{
-			_putchar(j + '0');
+			if (i == j)
+			{
+				_putchar('\\');
+			} else
+			{
+				_putchar(' ');
+			}
 		}
 		_putchar('\n');
 	}
