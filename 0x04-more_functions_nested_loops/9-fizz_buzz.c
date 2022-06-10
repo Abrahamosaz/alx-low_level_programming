@@ -1,47 +1,30 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * main - print out numbers from 1 to 100 with logic
  * Return: return integer value
  */
 int main(void)
 {
-int i, j, k, h;
-char f_w[] = "Fizz", s_w[] = "Buzz", t_w[] = "FizzBuzz";
+	int i;
 
-for (i = 1; i < 101; i++)
-{
-if (i == 1)
-	_putchar(i + '0');
-if (i > 1 && i % 3 == 0 && i % 5 == 0)
-{
-	_putchar(' ');
-	for (h = 0; h < 8; h++)
-		_putchar(t_w[h]);
-} else if (i > 1 && i % 3 == 0)
-{
-	_putchar(' ');
-	for (j = 0; j < 4; j++)
-		_putchar(f_w[j]);
-} else if (i > 1 && i % 5 == 0)
-{
-	_putchar(' ');
-	for (k = 0; k < 4; k++)
-		_putchar(s_w[k]);
-} else
-{
-	if (i > 1 && i < 10)
+	for (i = 1; i <= 100; i++)
 	{
-		_putchar(' ');
-		_putchar(i + '0');
+		if (i % 3 == 0 && i % 5 == 0)
+		{
+			printf("%s", "FizzBuzz");
+		} else if (i % 3 == 0)
+		{
+			printf("%s", "Fizz");
+		} else if (i % 5 == 0)
+		{
+			printf("%s", "Buzz");
+		} else
+		{
+			printf("%d", i); 
+		}
+		if (i < 100)
+			printf("%c", ' ');
 	}
-	if (i > 1 && i > 10)
-	{
-		_putchar(' ');
-		_putchar((i / 10) + '0');
-		_putchar((i % 10) + '0');
-	}
-}
-}
-_putchar('\n');
-return (0);
+	printf("%c", '\n');
+	return (0);
 }
