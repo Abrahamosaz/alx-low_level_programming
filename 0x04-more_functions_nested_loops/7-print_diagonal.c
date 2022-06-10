@@ -1,35 +1,22 @@
 #include "main.h"
+
 /**
- * print_diagonal - print out diagonal shape
- * @n: argument for the function
- *
- * Description: print out the required result
- *
- * Return: return void
- *
- */
+ *  * print_diagonal - print a straight line using putchar of n size
+ *   * @n: size of line
+*/
+
 void print_diagonal(int n)
 {
-	int i;
-	int j;
+	int x;
+	int y;
 
-	if (n > 0)
+	if (n <= 0)
+		_putchar('\n');
+	for (y = 0; y < n; y++)
 	{
-		for (i = 0; i < n; i++)
-		{
-			for (j = 0; j < n; j++)
-			{
-				if (i == j)
-				{
-					_putchar('\\');
-				} else
-				{
-					_putchar(' ');
-				}
-			}
-			_putchar('\n');
-		}
+		for (x = y; x > 0; x--)
+			_putchar(' ');
+		_putchar('\\');
 		_putchar('\n');
-	} else if (n <= 0)
-		_putchar('\n');
+	}
 }
