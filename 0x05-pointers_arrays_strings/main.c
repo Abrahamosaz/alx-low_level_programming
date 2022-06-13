@@ -1,19 +1,19 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * main - check the code for
  *
  * Return: Always 0.
  */
 int main(void)
 {
-    char *str;
-    char *s;
+    int array[5];
 
-    str = "0123456789";
-    s = "2346822";
-
-    puts_half(str);
-    puts_half(s);
+    array[0] = 98;
+    array[1] = 402;
+    array[2] = -198;
+    array[3] = 298;
+    array[4] = -1024;
+    print_array(array, 5);
     return (0);
 }
