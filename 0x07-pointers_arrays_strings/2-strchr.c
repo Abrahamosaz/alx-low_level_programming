@@ -13,11 +13,12 @@ char *_strchr(char *s, char c)
 {
 	char *src = s;
 
-	while (*src != c)
+	while (*src++)
 	{
-		src++;
+		if (*src == c)
+		{
+			return (src);
+		}
 	}
-	return (src);
-	if (*src != c)
-		return (NULL);
+	return (NULL);
 }
