@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 /**
  * _memcpy - copy n bytes from dest to src
  * @dest: firts argument
@@ -20,5 +19,5 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 		*_dest++ = src[i];
 	}
 	*_dest = '\0';
-	return (0);
+	return (dest);
 }
