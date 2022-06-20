@@ -12,25 +12,17 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int x, max = 0;
-	unsigned int i, j, count, len;
+	unsigned int i = 0, j = 0, len = 0;
 
-	len = strlen(accept);
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		for (j = 0; accept[j] != '\0' && accept[j] != s[i]; j++)
+			;
+		if (s[i] == accept[j])
+			len++;
+		if (accept[j] == '\0')
+			return (len);
+	}
+	return (len);
 
-	while (*s++ != ',')
-	{
-		count++;
-	}
-	for (i = 0; i < count; i++)
-	{
-		for (j = 0; j < len; j++)
-		{
-			if (s[i] == accept[j])
-			{
-				x = sizeof(*s);
-				max += 1;
-			}
-		}
-	}
-	return (max);
 }
