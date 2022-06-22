@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * sqtRecursive - computes square root recursively
  * @n: given number
