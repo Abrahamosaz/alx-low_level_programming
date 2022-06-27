@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include "main.h"
+#include <stdlib.h>
+/**
+ * create_array - create an array of char and initialise it with a specific value of char
+ * @size: size of the array in bytes
+ * @c: initilize value of char datatype
+ *
+ * Description: return the required result
+ *
+ * Result: return a char pointer
+ */
+char *create_array(unsigned int size, char c)
+{
+        char *ptr = NULL;
+        int i;
+
+        if (size == 0)
+                return (NULL);
+        ptr = (char *)malloc(size * sizeof(c));
+        if (ptr == NULL)
+        {
+                return (NULL);
+        } else
+        {
+                for (i = 0; i <= size; i++)
+                {
+                        ptr[i] = c;
+                }
+                return (ptr);
+        }
+}
+
