@@ -1,11 +1,11 @@
+#include "holberton.h"
 #include <stdlib.h>
 /**
- * wordCounterRec - return number of words
- * @str: pointer to a string
+ * wordCounterRec - count num of words recursively
+ * @str: pointer to char
  * @i: current index
- *
- * Return: return char pointer to a pointer
- */
+ * Return: number of words
+ **/
 int wordCounterRec(char *str, int i)
 {
 	if (str[i] == '\0')
