@@ -11,12 +11,19 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i = 0, j = 0;
+	int i, j;
 	char *ptr = NULL;
-
+	/**
+	 * checking for NULL string for both s1 and s2
+	 */
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	/**
 	 * count the lengh of string s1 and s2
 	 */
+	i = j = 0;
 	while (s1[i] != '\0')
 		i++;
 	while (s2[j] != '\0')
@@ -28,13 +35,6 @@ char *str_concat(char *s1, char *s2)
 	ptr = (char *)malloc((i + j + 1)  * sizeof(char));
 	if (ptr == NULL)
 		return (NULL);
-	/**
-	 * checking for NULL string for both s1 and s2
-	 */
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
 	/**
 	 * concatenating the value of s1 and s2
 	 * in memory allocated the pointer ptr
@@ -50,4 +50,3 @@ char *str_concat(char *s1, char *s2)
 	ptr[i] = '\0';
 	return (ptr);
 }
-
