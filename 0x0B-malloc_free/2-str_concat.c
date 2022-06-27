@@ -7,26 +7,38 @@
  *
  * Description: return the required result
  *
- * Return: retunr char pointer
+ * Return: return char pointer
  */
 char *str_concat(char *s1, char *s2)
 {
 	int i = 0, j = 0;
 	char *ptr = NULL;
 
+	/**
+	 * count the lengh of string s1 and s2
+	 */
 	while (s1[i] != '\0')
 		i++;
 	while (s2[j] != '\0')
 		j++;
+	/**
+	 * Allocate memory base on the length of s1 and s2
+	 * and plus 1 for NULL character
+	 */
 	ptr = (char *)malloc((i + j + 1)  * sizeof(char));
 	if (ptr == NULL)
 		return (NULL);
+	/**
+	 * checking for NULL string for both s1 and s2
+	 */
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	i = 0;
-	j = 0;
+	/**
+	 * concatenating the value of s1 and s2
+	 * in memory allocated the pointer ptr
+	 */
 	for (i = 0; s1[i] != '\0'; i++)
 	{
 		ptr[i] = s1[i];
