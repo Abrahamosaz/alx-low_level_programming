@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit (98);
+		exit(98);
 	}
 	x = atoi(argv[1]);
 	y = atoi(argv[3]);
@@ -28,13 +28,13 @@ int main(int argc, char *argv[])
 	if (ptr.f == NULL)
 	{
 		printf("Error\n");
-		exit (99);
+		exit(99);
 	}
 	result = ptr.f(x, y);
 	if (result == 0)
 	{
 		printf("Error\n");
-		exit (100);
+		exit(100);
 	} else
 	{
 		printf("%d\n", result);
