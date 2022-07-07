@@ -8,7 +8,7 @@
  * Description: return the required result
  *
  * Return: return void
- */ 
+ */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list args;
@@ -18,10 +18,14 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	for (i = 1; i <= n; i++)
 	{
 		if (separator == NULL)
-			return;
-		printf("%d", va_arg(args, unsigned int));
-		if (i < n)
-			printf("%s", separator);
+		{
+			printf("%d", va_arg(args, unsigned int));
+		} else
+		{
+			printf("%d", va_arg(args, unsigned int));
+			if (i < n)
+				printf("%s", separator);
+		}
 	}
 	printf("%c", '\n');
 	va_end(args);
