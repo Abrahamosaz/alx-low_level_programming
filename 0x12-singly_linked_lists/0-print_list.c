@@ -30,5 +30,6 @@ size_t print_list(const list_t *h)
 		ptr = ptr->next;
 		count++;
 	}
+	free(h->next);
 	return (count);
 }
