@@ -22,7 +22,7 @@ list_t *add_node(list_t **head, const char *str)
 	while (str[len] != '\0')
 		len++;
 	/* Allocating memory to duplicate the string */
-	new_string = malloc(sizeof(char) * len);
+	new_string = malloc(sizeof(char) * len + 1);
 	if (new_string == NULL)
 		return (NULL);
 	new_string = strdup(str);
