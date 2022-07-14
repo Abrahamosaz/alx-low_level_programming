@@ -3,7 +3,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
+ * print_list - print out the values of a linked list
+ * @h: pointer to the first linked list
  *
+ * Description: print the required result
+ *
+ * Return: return integer value
  */
 size_t print_list(const list_t *h)
 {
