@@ -15,7 +15,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 
 	for (i = 0; i < index; i++)
 	{
-		if (dir == NULL)
+		if (dir->next == NULL)
 			return (NULL);
 		dir = dir->next;
 	}
