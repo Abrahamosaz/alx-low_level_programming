@@ -1,1 +1,1 @@
-hash table data sstructre
+hash table data structure
