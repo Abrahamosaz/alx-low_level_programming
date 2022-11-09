@@ -1,0 +1,6 @@
+#define all target to use
+all: school
+
+#define the school executable file
+school: main.c school.c
+	gcc $^ -o school
