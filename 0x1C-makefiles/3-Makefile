@@ -6,9 +6,7 @@ OBJ=${SRC:.c=.o}
 NAME=school
 RM=rm -f
 
-all: $(NAME)
-
-$(NAME): $(OBJ)
+all: $(OBJ)
 	$(CC) $? -o $(NAME)
 
 %.o: %.c
@@ -22,4 +20,4 @@ oclean:
 
 fclean: clean oclean
 
-re: oclean all
+re: fclean all
