@@ -6,9 +6,9 @@ OBJ=${SRC:.c=.o}
 NAME=school
 RM=rm -f
 CFLAG=-Wall -Werror -Wextra -pedantic
-
+	
 all: $(OBJ)
-	$(CC) $? -o $(NAME)
+	$(CC) $(OBJ) -o $(NAME)
 
 %.o: %.c
 	$(CC) $(CFLAG) -c -o $@ $<
